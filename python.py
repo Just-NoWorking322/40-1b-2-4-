@@ -8,12 +8,11 @@ class User:
     def __str__(self):
         return f"Пользователь {self.name}"
 
-user = User("Алишер")
-
-print(user.name)
-print(user)
 
 # class User:
 #     pass
 # user = User()
 # print(user)
+
+
+print("Hello world")
