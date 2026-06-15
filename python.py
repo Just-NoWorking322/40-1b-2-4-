@@ -34,7 +34,7 @@ print(len(team))
 
 class Money:
     def __init__(self,amount):
-        self.amount = amount
+        self.amount = amount #self
 
     def __add__(self, other):
         return Money(self.amount + other.amount)
@@ -48,3 +48,36 @@ m2 = Money(50)
 print(m1 + m2)
 
 # 150
+#cls 
+
+#  Создайте класс Фруктов будет название фрукта, Откуда он,
+#  И срок годности Выведиите так Фрукт: Название,
+#  Срок: дата,
+#  Изготовитель: Имя
+
+# Вывод такой ---- сделайте вывод пары фруктов
+# Фрукт: Название, Срок: дата,  Изготовитель: Имя
+
+class Math:
+
+    @staticmethod
+    def add(a, b):
+        return a + b 
+    
+print(Math.add(5, 3))
+
+class Human:
+
+    def normal(self):
+        pass # Нет декоратора - Метод получает self
+
+    @classmethod    
+    def cls_method(cls):
+        pass # @classmethod - Метод получает cls
+
+    @staticmethod
+    def static_method():
+        pass # @staticmethod - Метод не получает self и cls
+
+# Декоратор — это функция, которая изменяет поведение другой функции.
+
